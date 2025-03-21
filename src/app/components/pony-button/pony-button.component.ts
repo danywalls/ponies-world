@@ -1,8 +1,11 @@
 import { Component, computed, input } from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-pony-button',
-  imports: [],
+  imports: [
+    MatButtonModule
+  ],
   templateUrl: './pony-button.component.html',
   styleUrl: './pony-button.component.scss',
 })
