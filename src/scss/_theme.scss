@@ -1,12 +1,12 @@
 @use "colors";
 @use "mixins";
+@use '@angular/material' as mat;
 
-.pony-btn {
-  @include mixins.pony-button();
-}
-.pony-btn-dark {
-  @include mixins.pony-button(
-    colors.$primary-color-dark,
-    colors.$text-color-dark
-  );
+html {
+  color-scheme: light;
+  @include mat.theme((
+    color: colors.$primary-color,
+    typography: Roboto,
+    density: 0
+  ));
 }
