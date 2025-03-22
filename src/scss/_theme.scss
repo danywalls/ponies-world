@@ -1,11 +1,10 @@
-@use "colors";
-@use "mixins";
 @use '@angular/material' as mat;
+@use 'theme-colors' as ponytheme;
 
 html {
   color-scheme: light;
   @include mat.theme((
-    color: colors.$primary-color,
+    color: ponytheme.$primary-palette,
     typography: Roboto,
     density: 0
   ));
