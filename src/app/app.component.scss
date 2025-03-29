@@ -1,0 +1,11 @@
+.welcome {
+  display: flex;
+
+  text-align: center;
+  flex-direction: column;
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
