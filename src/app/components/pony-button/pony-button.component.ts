@@ -1,5 +1,5 @@
-import { Component, input } from '@angular/core';
-import {KENDO_BUTTON} from '@progress/kendo-angular-buttons';
+import {Component, input} from '@angular/core';
+import {ButtonThemeColor, KENDO_BUTTON} from '@progress/kendo-angular-buttons';
 
 @Component({
   selector: 'app-pony-button',
@@ -9,5 +9,5 @@ import {KENDO_BUTTON} from '@progress/kendo-angular-buttons';
 })
 export class PonyButtonComponent {
   label = input<string>('Accept');
-  primary = input<boolean>(false)
+  theme = input<ButtonThemeColor>('base');
 }
